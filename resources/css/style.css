@@ -29,7 +29,7 @@
   
   .nav-links a {
     text-decoration: none;
-    color: rgb(58, 68, 88);;
+    color: rgb(58, 68, 88);
     font-size: 20px;
     border: 2px solid transparent;
     padding: 5px 10px;
@@ -37,14 +37,14 @@
   
   .nav-links a:hover {
     background-color: #c0c0c0; /* transparent gray */
-    border-radius: 4px;
+    border-radius: 3px;
   }
   
   .cart {
     position: fixed;
     bottom: 670px;
     width: 100px;
-    animation: driveIn 5s ease-out forwards;
+    animation: driveIn 4.5s ease-out forwards;
   }
   
   @keyframes driveIn {
@@ -70,6 +70,25 @@
     font-family: 'vandertak-capslock', sans-serif;
     text-align: center;
     color: rgb(58, 68, 88);
-    font-size: 100px;
+    font-size: 150px;
     padding-top: 50px;
+  }
+  .bottom-section {
+    background-color: rgb(58, 68, 88);
+    padding: 50px 20px;
+    min-height: 100vh;
+  }
+  .side-img {
+    width: 300px;
+    height: auto;
+  }
+  
+  .side-text {
+    color: #fff;
+  }
+  .content-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
   }
