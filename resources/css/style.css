@@ -1,169 +1,202 @@
 .profile-pic {
-    width: 50%;
-    height: auto;
+  width: 50%;
+  height: auto;
+}
+
+body {
+  font-family: 'vandertak-capslock-top', sans-serif;
+  background-color: #fff;
+  padding-bottom: 100px;
+}
+
+.custom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  opacity: 0;
+}
+
+.custom-nav.visible {
+  animation: fadeIn 4.5s ease-out forwards;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(58, 68, 88);
+  font-size: 20px;
+  border: 2px solid transparent;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  background-color: #c0c0c0;
+  border-radius: 3px;
+}
+
+.cart {
+  position: absolute;
+  top: 10px;
+  width: 100px;
+  animation: driveIn 4.5s ease-out forwards;
+  z-index: -1;
+}
+
+@keyframes driveIn {
+  0% {
+    left: -300px;
   }
-  
-  body {
-    font-family: 'vandertak-capslock-top', sans-serif;
-    background-color: #fff;
-    padding-bottom: 100px;
+  100% {
+    left: 110%;
   }
-  
-  .custom-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px;
-    /*background-color: rgb(58, 68, 88);*/
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
+    transform: translateX(-100vw);
   }
-  
-  .custom-nav.visible {
-    animation: fadeIn 4.5s ease-out forwards;
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
-  
-  .nav-links {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: rgb(58, 68, 88);
-    font-size: 20px;
-    border: 2px solid transparent;
-    padding: 5px 10px;
-  }
-  
-  .nav-links a:hover {
-    background-color: #c0c0c0; 
-    border-radius: 3px;
-  }
-  
-  .cart {
-    position: absolute;
-    top: 10px; 
-    width: 100px;
-    animation: driveIn 4.5s ease-out forwards;
-    z-index: -1; 
-  }
-  
-  @keyframes driveIn {
-    0% {
-      left: -300px;
-    }
-    100% {
-      left: 110%;
-    }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateX(-100vw); /* 100vw = full width of the screen */
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  .name-title h1 {
-    font-family: 'vandertak-capslock', sans-serif;
-    text-align: center;
-    color: rgb(58, 68, 88);
-    font-size: 150px;
-    padding-top: 50px;
-    position: relative;
-    z-index: 1;
-  }
-  .bottom-section {
-    background-color: rgb(58, 68, 88);
-    padding: 50px 20px;
-    min-height: 100vh;
-  }
-  .side-img {
-    width: 300px;
-    height: auto;
-  }
-  
-  .side-text {
-    color: #fff;
-    font-family: vandertak-regular, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-  }
+}
+
+.name-title h1 {
+  font-family: 'vandertak-capslock', sans-serif;
+  text-align: center;
+  color: rgb(58, 68, 88);
+  font-size: 150px;
+  padding-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.bottom-section {
+  background-color: rgb(58, 68, 88);
+  padding: 50px 20px;
+  min-height: 100vh;
+}
+
+.side-img {
+  width: 40%;
+  height: auto;
+}
+
+.side-text {
+  color: #fff;
+  font-family: vandertak-regular, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 50px;
+  padding-left: 100px;
+}
+
+.top-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.no-animation.visible {
+  animation: none;
+  opacity: 1;
+}
+
+.tabs-title h1 {
+  font-family: 'vandertak-capslock', sans-serif;
+  text-align: center;
+  color: rgb(58, 68, 88);
+  font-size: 100px;
+  padding-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: 'vandertak-capslock', sans-serif;
+  text-align: center;
+  color: rgb(58, 68, 88);
+  gap: 15px;
+  padding: 60px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.overlay p {
+  font-family: 'vandertak-capslock-top', sans-serif;
+  color: #fff;
+  font-size: 38px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid-item:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.grid-item:hover .overlay p {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
   .content-section {
-    display: flex;
-    align-items: center;
-    gap: 100px;
-    padding: 50px;
-    padding-left: 100px;
+    flex-direction: column !important;
+    padding: 20px !important;
+    gap: 30px;
   }
-  .top-section {
-    position: relative;
-    overflow: hidden; /* hides the cart when off screen */
+
+  .side-img {
+    width: 100% !important;
   }
-  .no-animation.visible {
-    animation: none;
-    opacity: 1;
+
+  .side-text {
+    width: 100% !important;
   }
-  .tabs-title h1 {
-    font-family: 'vandertak-capslock', sans-serif;
-    text-align: center;
-    color: rgb(58, 68, 88);
-    font-size: 100px;
-    padding-top: 20px;
+
+  .name-title h1 {
+    font-size: 80px;
   }
+  
   .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-    font-family: 'vandertak-capslock', sans-serif;
-    text-align: center;
-    color: rgb(58, 68, 88);
-    gap: 15px;
-    padding: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
   }
-  .grid-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-  
-  .grid-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-  }
-  
-  .overlay p {
-    font-family: 'vandertak-capslock-top', sans-serif;
-    color: #fff;
-    font-size: 38px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .grid-item:hover .overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  
-  .grid-item:hover .overlay p {
-    opacity: 1;
-  }
+}
