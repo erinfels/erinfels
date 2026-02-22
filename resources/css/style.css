@@ -194,7 +194,9 @@ body {
   .name-title h1 {
     font-size: 80px;
   }
-  
+  .tabs-title h1 {
+    font-size: 40px !important;
+  }
   .grid {
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
