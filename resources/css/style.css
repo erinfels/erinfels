@@ -4,7 +4,7 @@
   }
   
   body {
-    font-family: 'vandertak-capslock', sans-serif;
+    font-family: 'vandertak-capslock-top', sans-serif;
     background-color: #fff;
     padding-bottom: 100px;
   }
@@ -36,15 +36,16 @@
   }
   
   .nav-links a:hover {
-    background-color: #c0c0c0; /* transparent gray */
+    background-color: #c0c0c0; 
     border-radius: 3px;
   }
   
   .cart {
-    position: fixed;
-    bottom: 670px;
+    position: absolute;
+    top: 10px; 
     width: 100px;
     animation: driveIn 4.5s ease-out forwards;
+    z-index: -1; 
   }
   
   @keyframes driveIn {
@@ -72,6 +73,8 @@
     color: rgb(58, 68, 88);
     font-size: 150px;
     padding-top: 50px;
+    position: relative;
+    z-index: 1;
   }
   .bottom-section {
     background-color: rgb(58, 68, 88);
@@ -85,10 +88,12 @@
   
   .side-text {
     color: #fff;
+    font-size: 25px;
   }
   .content-section {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 100px;
     padding: 50px;
+    padding-left: 100px;
   }
