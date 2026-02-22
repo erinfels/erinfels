@@ -1,9 +1,12 @@
-document.body.style.overflow = 'hidden';
-
+const cart = document.querySelector('.cart');
 const nav = document.getElementById('mainNav');
 
-setTimeout(() => {
+if (cart) {
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => {
+    nav.classList.add('visible');
+    document.body.style.overflow = 'auto';
+  }, 800);
+} else {
   nav.classList.add('visible');
-  // re-enable scrolling after nav appears
-  document.body.style.overflow = 'auto';
-}, 800);
+}
