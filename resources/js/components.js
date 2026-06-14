@@ -16,7 +16,7 @@ function loadComponent(id, file) {
         document.body.style.overflow = 'auto';
       }, 200);
     } else {
-      nav.classList.add('visible');
+        nav.classList.add('no-animation', 'visible');
     }
   });
   

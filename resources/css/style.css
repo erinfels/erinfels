@@ -216,3 +216,8 @@ body {
   color: #fff;
   font-size: 10px !important;
 }
+.custom-nav.no-animation.visible {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
