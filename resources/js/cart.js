@@ -6,7 +6,7 @@ if (cart) {
   setTimeout(() => {
     nav.classList.add('visible');
     document.body.style.overflow = 'auto';
-  }, 800);
+  }, 200);
 } else {
   nav.classList.add('visible');
 }
