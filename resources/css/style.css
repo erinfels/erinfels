@@ -228,3 +228,18 @@ body {
   opacity: 1 !important;
   transform: none !important;
 }
+/* Automatically rounds every video player on your site and clips the corners */
+video {
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+/* Automatically rounds all the main images on your site */
+.grid-item img, 
+.video-container, 
+.col-md-6 img, 
+.col-md-4 img, 
+.col-md-3 img {
+  border-radius: 10px !important;
+  overflow: hidden;
+}
