@@ -228,13 +228,10 @@ body {
   opacity: 1 !important;
   transform: none !important;
 }
-/* Automatically rounds every video player on your site and clips the corners */
 video {
   border-radius: 10px !important;
   overflow: hidden;
 }
-
-/* Automatically rounds all the main images on your site */
 .grid-item img, 
 .video-container, 
 .col-md-6 img, 
@@ -242,4 +239,17 @@ video {
 .col-md-3 img {
   border-radius: 10px !important;
   overflow: hidden;
+}
+.about-box {
+  border: 2px solid #8a96ab;
+  background-color: #cbc8c8;
+  border-radius: 16px;
+  padding: 30px;
+  color: #d4dae6;
+}
+.custom-nav img {
+  border-radius: 10%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
 }
