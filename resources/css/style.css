@@ -67,14 +67,20 @@ body {
   }
 }
 
-.name-title h1 {
+.name-title h1,
+.name-title h3{
   font-family: 'vandertak-capslock', sans-serif;
   text-align: center;
   color: rgb(58, 68, 88);
-  font-size: 300px;
+  font-size: 135px;
   padding-top: 10px;
   position: relative;
   z-index: 1;
+}
+.name-title h3{
+  padding-top: 0px;
+  padding-bottom: 8px;
+  font-size: 20px;
 }
 
 .bottom-section {
@@ -133,7 +139,8 @@ body {
   font-family: 'vandertak-capslock', sans-serif;
   text-align: center;
   color: rgb(58, 68, 88);
-  gap: 15px;
+  row-gap: 32px;
+  column-gap: 20px;
   padding: 60px;
 }
 
