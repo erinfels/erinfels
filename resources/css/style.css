@@ -252,10 +252,31 @@ video {
   border-radius: 16px;
   padding: 30px;
   color: #d4dae6;
+  height: fit-content; 
 }
 .custom-nav img {
   border-radius: 10%;
   width: 40px;
   height: 40px;
   object-fit: cover;
+}
+.carousel-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  background: transparent;
+}
+.caption-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.carousel-item video {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  background: transparent;
 }
