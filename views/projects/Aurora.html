@@ -29,11 +29,9 @@
             <div class="container py-5">
                 <div class="row g-4 align-items-stretch">
 
-                    <!-- Photo side -->
                     <div class="col-12 col-md-7">
                         <div id="albumCarousel" class="carousel slide" data-bs-ride="false">
                             <div class="carousel-inner" id="carouselInner">
-                                <!-- slides injected by JS -->
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#albumCarousel"
                                 data-bs-slide="prev">
@@ -47,7 +45,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-12 col-md-5 about-box"">
+                    <div class="col-12 col-md-5 about-box side-text">
                         <div class="caption-panel">
                             <p class="text-uppercase text-muted small mb-1" id="captionEyebrow"></p>
                             <h3 id="captionTitle" class="fw-bold"></h3>
@@ -63,7 +61,7 @@
         <blockquote class="instagram-media" data-instgrm-captioned
             data-instgrm-permalink="https://www.instagram.com/reel/DZol3vymFVB/?utm_source=ig_embed&amp;utm_campaign=loading"
             data-instgrm-version="14"
-            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
             <div style="padding:16px;"> <a
                     href="https://www.instagram.com/reel/DZol3vymFVB/?utm_source=ig_embed&amp;utm_campaign=loading"
                     style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
@@ -155,8 +153,12 @@
     </div>
     <script>
         const photos = [
-          { type: "photo", src: "../../resources/img/AuroraUserInteraction.png", eyebrow: "Class Expo Day", title: "Mountain Overlook", body: "..." },
-          { type: "video", src: "../../resources/img/AuroraInteractionDemo.mp4", eyebrow: "Chapter 2", title: "Live Demo", body: "..." }
+          { type: "photo", src: "../../resources/img/AuroraUserInteraction.png", eyebrow: "Class Expo Day", title: "About Aurora A La Carte", body: "Group Project built for \"How to: Design a Science Museum Exhbit \" created with 5 other members, Erin Fels, Julia McKeag, Ayesha Rawal, Sylvia Robles, and Kira Warren. The goal was to develop an interactive exhibit, that could be used by all ages to help educate about the Aurora Borealis instead of a lack of interaction like during a lecture or reading. My job was the technology lead where I developed our primary control systems. I integrated our Aurora A La Carte website with multiple pot sliders via a Tiny-Core(ESP-based MCU), Wi-Fi, and WebSockets for real-time interaction. Within my position, I also designed and soldered the circuitry and control system to create safe and reliable connections. I also developed a printable take-home token for users by integrating a printing system using Node.js where a physical button triggered the printer. Finally, we documented the process, code, materials, and “recipe” for others to repeat and recreate for themselves" },
+          { type: "video", src: "../../resources/vid/AuroraInteractionDemo.mp4", eyebrow: "Atlas Expo", title: "User Interaction Demo", body: "User interacting with the physical interface. The exhbibit and website changing in real time based on the slider pot values during the Atlas Expo." },
+          { type: "photo", src: "../../resources/img/AuroraEduSheet.png", eyebrow: "Final Deliverable", title: "User Education Guide", body: "A way to challenge users and facillitate learning about the attributes and effects that cause the Aurora Borealis." },
+          { type: "photo", src: "../../resources/img/AuroraPeppersGhostTopView.png", eyebrow: "Top Projector View", title: "First time turning the projector on", body: "" },
+          { type: "photo", src: "../../resources/img/AurorapeppersTest.jpg", eyebrow: "Aurora Test", title: "Original Peppers Test", body: "To create the affect that the Aurora was actually happening and not being projected on the screen, we utilized the pepper's ghost trick. Testing took place to find the correct angle of the acrylic and how tall the enclosure needed to be." }
+
         ];
       </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
