@@ -43,6 +43,41 @@
           theme would be.</p>
       </div>
     </div>
+    <div class="container py-5">
+      <div class="row g-4 align-items-stretch">
+
+          <div class="col-12 col-md-7">
+              <div id="albumCarousel" class="carousel slide" data-bs-ride="false">
+                  <div class="carousel-inner" id="carouselInner">
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#albumCarousel"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#albumCarousel"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+          </div>
+          <div class="col-12 col-md-5 about-box side-text">
+              <div class="caption-panel">
+                  <p class="text-uppercase text-muted small mb-1" id="captionEyebrow"></p>
+                  <h3 id="captionTitle" class="fw-bold"></h3>
+                  <p id="captionBody" class="text-secondary"></p>
+              </div>
+          </div>
+      </div>
+  </div>
+    <script>
+      const photos = [
+        { type: "youtube", src: "https://www.youtube.com/embed/VIDEO_ID", eyebrow: "Chapter 3", title: "Full Build Walkthrough", body: "..."},
+        { type: "photo", src: "../../resources/img/SunnysideCafeLogo.png", eyebrow: "Graphic Design, Adobe Illustrator", title: "Sunnyside Up Cafe", body: "I created the logo for our ride using Procreate and Adobe Creative Cloud. The inspiration for this design focused mainly on prexisting farm to table restaurants and breakfast cafes." },
+        { type: "photo", src: "../../resources/img/REC2026CircuitPros.jpeg", eyebrow: "Ardiuno, I2C", title: "Work In Progress Circuit", body: "Here is a circuit that I have been working on that was primarily working with just running interrupts with the MCP23008 I/O expander." }
+      ];
+    </script>
     <div class="grid">
       <img src="../../resources/img/SunnysideCafeLogo.png" alt="Image" style="width: 80%; height: auto;">
       <div class="side-text">
@@ -83,5 +118,7 @@
       <p>Video created by Liam Cox and voiced by Ian Mcleod.</p>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="../../resources/js/carousel.js"></script>
 </body>
 </html>

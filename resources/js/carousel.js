@@ -28,6 +28,16 @@
           video.playsInline = true;
           video.muted = true; // remove if you want sound by default
           item.appendChild(video);
+        } 
+        else if (p.type === "youtube") {
+          const iframe = document.createElement("iframe");
+          iframe.src = p.src;
+          iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+          iframe.allowFullscreen = true;
+          iframe.style.width = "100%";
+          iframe.style.aspectRatio = "4 / 3";
+          iframe.style.border = "none";
+          item.appendChild(iframe);
         } else {
           const img = document.createElement("img");
           img.src = p.src;
