@@ -25,29 +25,37 @@
     <h1>Escape Room Puzzle</h1>
   </div>
   <div class="bottom-section">
-    <div class="container my-5">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-6 mb-4 mb-md-0">
-          <div class="video-container" style="width: 60%; border-radius: 10px; overflow: hidden;">
-            <video width="100%" controls style="display: block;">
-              <source src="../../resources/vid/EscRmVid.MOV" type="video/mp4">
-            </video>
+    <div class="content-section">
+      <div class="container py-5">
+          <div class="row g-4 align-items-stretch">
+
+              <div class="col-12 col-md-7">
+                  <div id="albumCarousel" class="carousel slide" data-bs-ride="false">
+                      <div class="carousel-inner" id="carouselInner">
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#albumCarousel"
+                          data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#albumCarousel"
+                          data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+                  <div class="thumb-strip" id="thumbStrip"></div>
+              </div>
+              <div class="col-12 col-md-5 about-box side-text">
+                  <div class="caption-panel">
+                      <p class="text-uppercase text-muted small mb-1" id="captionEyebrow"></p>
+                      <h3 id="captionTitle" class="fw-bold"></h3>
+                      <p id="captionBody" class="text-secondary"></p>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="col-md-6 text-left">
-          <div class="side-text">
-            <h2>About:</h2>
-            <p>We were able to choose to do a project that combined electrical components and enclosure design. I chose
-              to doan escape room puzzle. This puzzle used 3 RFID tag readers and included code that made sure that the
-              correct tag was placed. It linked to a boolean statement that triggered a servo to the move to the open
-              position. If not, it would move back to zero or stay at the zero position. I used a hinge and prints from
-              Printables (all linked below).
-            </p>
-          </div>
-          <img src="../../resources/img/EscRmRFIDPieces.png" alt="Image" style="width: 50%; height: auto; border-radius: 10px;">
-        </div>
       </div>
-    </div>
+  </div>
     <div class="container my-5">
       <div class="row g-0 align-items-center justify-content-center text-center">
         <div class="col-md-3 mb-4 mb-md-0">
@@ -78,6 +86,19 @@
     </div>
   </div>  
 </div>
+<script>
+  const photos = [
+    { type: "video", src: "../../resources/vid/EscRmVid.mp4", eyebrow: "Physical Computing, Arduino, Circuitry", title: "RFID Tag Escape Room Puzzle", body: "We were able to choose to do a project that combined electrical components and enclosure design. I chose to doan escape room puzzle. This puzzle used 3 RFID tag readers and included code that made sure that the correct tag was placed. It linked to a boolean statement that triggered a servo to the move to the open position. If not, it would move back to zero or stay at the zero position. I used a hinge and prints from Printables (all linked below)." },
+    { type: "photo", src: "../../resources/img/EscRmRFIDPieces.png", eyebrow: "Physical Computing, Arduino, Circuitry", title: "About Aurora A La Carte", body: "" },
+    { type: "photo", src: "../../resources/img/EscRmProto.jpeg", eyebrow: "Physical Computing, Arduino, Circuitry", title: "User Interaction Demo", body: "User interacting with the physical interface. The exhbibit and website changing in real time based on the slider pot values during the Atlas Expo." },
+    { type: "photo", src: "../../resources/img/AuroraEduSheet.png", eyebrow: "Physical Computing, Arduino, Circuitry", title: "User Education Guide", body: "A way to challenge users and facillitate learning about the attributes and effects that cause the Aurora Borealis." },
+    { type: "photo", src: "../../resources/img/AuroraPeppersGhostTopView.png", eyebrow: "Physical Computing, Arduino, Circuitry", title: "First time turning the projector on", body: "" },
+    { type: "photo", src: "../../resources/img/AuroraPeppersTest.jpg", eyebrow: "Physical Computing, Arduino, Circuitry", title: "Original Peppers Test", body: "To create the affect that the Aurora was actually happening and not being projected on the screen, we utilized the pepper's ghost trick. Testing took place to find the correct angle of the acrylic and how tall the enclosure needed to be." }
+
+  ];
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="../../resources/js/carousel.js"></script>
 </body>
 
 </html>

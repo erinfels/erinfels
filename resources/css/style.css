@@ -291,3 +291,55 @@ video {
 #captionTitle {
   color: #3a4458;
 }
+
+.thumb-strip {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 12px 4px;
+  margin-top: 12px;
+  scrollbar-width: thin;
+}
+
+.thumb {
+  flex: 0 0 auto;
+  width: 80px;
+  height: 60px;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  opacity: 0.55;
+  background: none;
+  position: relative;
+  transition: opacity 0.2s, border-color 0.2s;
+}
+
+.thumb:hover { opacity: 0.85; }
+
+.thumb.active {
+  opacity: 1;
+  border-color: #3a4458;
+}
+
+.thumb img,
+.thumb video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+/* small play icon on video thumbnails */
+.thumb.is-video::after {
+  content: "\25B6";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.25);
+}
