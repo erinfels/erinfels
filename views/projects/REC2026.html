@@ -35,63 +35,65 @@
             </video>
           </div>
         </div>
-      
-        <div class="col-md-6 text-left">
-          <div class="side-text">
-            <h2>About:</h2>
-            <p>CU Theme Park Engineering and Design Club created the Sunnyside Scrambler to compete in the 2026 Ride
+        <div class="col-12 col-md-5 about-box side-text">
+          <div class="caption-panel">
+            <h3 class="caption-text fw-bold">About:</h3>
+            <p class="caption-text">CU Theme Park Engineering and Design Club created the Sunnyside
+              Scrambler to compete in the 2026 Ride
               Engineering Competition. The scrambler-themed scrambler is designed and documented in adherence with
-              professional ride design standards including ASTM F2291. The team placed second in the west division out of
-              16 teams. This year I was chosen to be our Theming Electrical Lead, where I not only help creating and make
-              design choices for the entire time but I have also had a hand in writing and creating code for the ride. My
+              professional ride design standards including ASTM F2291. The team placed second in the west division out
+              of
+              16 teams. This year I was chosen to be our Theming Electrical Lead, where I not only help creating and
+              make
+              design choices for the entire time but I have also had a hand in writing and creating code for the ride.
+              My
               job was primarily to work with I2C and create interrupts that will help add our safety related systems. I
               also have been lead on the graphic design choices of the team from logos to final desicions of what the
               theme would be.
             </p>
-          </div>  
-        </div>  
+          </div>
+        </div>
       </div>
     </div>
     <div class="container py-5">
       <div class="row g-4 align-items-stretch">
 
-          <div class="col-12 col-md-7">
-              <div id="albumCarousel" class="carousel slide" data-bs-ride="false">
-                  <div class="carousel-inner" id="carouselInner">
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#albumCarousel"
-                      data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#albumCarousel"
-                      data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                  </button>
-              </div>
-              <div class="thumb-strip" id="thumbStrip"></div>
+        <div class="col-12 col-md-7">
+          <div id="albumCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner" id="carouselInner">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#albumCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#albumCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="col-12 col-md-5 about-box side-text">
-              <div class="caption-panel">
-                  <p class="text-uppercase text-muted small mb-1" id="captionEyebrow"></p>
-                  <h3 id="captionTitle" class="fw-bold"></h3>
-                  <p id="captionBody" class="text-secondary"></p>
-              </div>
+          <div class="thumb-strip" id="thumbStrip"></div>
+        </div>
+        <div class="col-12 col-md-5 about-box side-text">
+          <div class="caption-panel">
+            <p class="text-uppercase text-muted small mb-1" id="captionEyebrow"></p>
+            <h3 id="captionTitle" class="fw-bold"></h3>
+            <p id="captionBody" class="text-secondary"></p>
           </div>
+        </div>
       </div>
+    </div>
   </div>
-</div>
-    <script>
-      const photos = [
-        { type: "youtube", src: "https://www.youtube.com/embed/vx70HsGjltk", eyebrow: "", title: "2026 Theory of Ops Video", body: "Video created by Liam Cox and voiced by Ian Mcleod."},
-        { type: "photo", src: "../../resources/img/SunnysideCafeLogo.png", eyebrow: "Graphic Design, Adobe Illustrator", title: "Sunnyside Up Cafe", body: "I created the logo for our ride using Procreate and Adobe Creative Cloud. The inspiration for this design focused mainly on prexisting farm to table restaurants and breakfast cafes." },
-        { type: "photo", src: "../../resources/img/REC2026CircuitPros.jpeg", eyebrow: "Ardiuno, I2C", title: "Work In Progress Circuit", body: "Here is a circuit that I have been working on that was primarily working with just running interrupts with the MCP23008 I/O expander." },
-        { type: "video", src: "../../resources/vid/REC2026ProsVid.mp4", eyebrow: "Prototyping", title: "Ride Prototype", body: "A prototype video of the Sunnyside Scrambler in an protoype state. Testing the fesability of the homemade scissor lift." },
-        { type: "video", src: "../../resources/vid/REC2026PrototypeVid.MP4", eyebrow: "Prototyping", title: "Ride Prototype", body: "Running and testing the motors" }
-      ];
-    </script>
+  <script>
+    const photos = [
+      { type: "youtube", src: "https://www.youtube.com/embed/vx70HsGjltk", eyebrow: "", title: "2026 Theory of Ops Video", body: "Video created by Liam Cox and voiced by Ian Mcleod." },
+      { type: "photo", src: "../../resources/img/SunnysideCafeLogo.png", eyebrow: "Graphic Design, Adobe Illustrator", title: "Sunnyside Up Cafe", body: "I created the logo for our ride using Procreate and Adobe Creative Cloud. The inspiration for this design focused mainly on prexisting farm to table restaurants and breakfast cafes." },
+      { type: "photo", src: "../../resources/img/REC2026CircuitPros.jpeg", eyebrow: "Ardiuno, I2C", title: "Work In Progress Circuit", body: "Here is a circuit that I have been working on that was primarily working with just running interrupts with the MCP23008 I/O expander." },
+      { type: "video", src: "../../resources/vid/REC2026ProsVid.mp4", eyebrow: "Prototyping", title: "Ride Prototype", body: "A prototype video of the Sunnyside Scrambler in an protoype state. Testing the fesability of the homemade scissor lift." },
+      { type: "video", src: "../../resources/vid/REC2026PrototypeVid.MP4", eyebrow: "Prototyping", title: "Ride Prototype", body: "Running and testing the motors" }
+    ];
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
   <script src="../../resources/js/carousel.js"></script>
 </body>
+
 </html>
