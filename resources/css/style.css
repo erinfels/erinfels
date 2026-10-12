@@ -1,20 +1,29 @@
-.profile-pic {
-  width: 50%;
-  height: auto;
-}
+
 
 body {
   font-family: 'vandertak-capslock-top', sans-serif;
   background-color: #fff;
-  /*padding-bottom: 100px;*/
+}
+
+.profile-pic {
+  width: 50%;
+  height: auto;
 }
 
 .custom-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 15px 30px;
   opacity: 0;
+}
+
+.nav-line {
+  width: 1450px;
+  margin: 0 auto;
+  border: none;
+  border-top: 3px solid rgb(58, 68, 88);
+  opacity: 1;
 }
 
 .custom-nav.visible {
@@ -23,7 +32,7 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .nav-links a {
@@ -31,12 +40,16 @@ body {
   color: rgb(58, 68, 88);
   font-size: 20px;
   border: 2px solid transparent;
-  padding: 5px 10px;
+  padding: 5px 3px;
 }
 
 .nav-links a:hover {
   background-color: #c0c0c0;
   border-radius: 3px;
+}
+
+.custom-nav img {
+  margin-left: 5px;
 }
 
 .cart {

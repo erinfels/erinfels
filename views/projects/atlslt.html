@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Atlas Light Tower</title>
     <link rel="stylesheet" href="https://use.typekit.net/phe6enj.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -21,6 +21,7 @@
             </div>
         </div>
     </div>
+    <hr class="nav-line">
     <div class="tabs-title">
         <h1>Atlas Institute Light Tower</h1>
     </div>
@@ -56,42 +57,48 @@
         </div>
     </div>
         </div>
-        <div class="row mt-5 align-items-center justify-content-center text-center">
-            <div class="col-4">
-                <img src="../../resources/img/AtlsLTWebsiteView.jpeg" alt=""
-                    style="width: 80%; border-radius: 10px;">
-                <p class="captions text-center">Laser cut back of ShadeShelf</p>
-            </div>
-            <div class="col-4">
-                <img src="../../resources/img/SSFullModel.jpeg" alt=""
-                    style="width: 80%; border-radius: 10px;">
-                <p class="captions text-center">Full model of the ShadeShelf</p>
-            </div>
-            
-            <div class="col-4">
-                <img src="../../resources/img/SSLaserPhoto.jpeg" alt=""
-                    style="width: 80%; border-radius: 10px;">
-                <p class="captions text-center">ShadeShelf being laser cut</p>
-            </div>
-        </div>
-        <div class="row mt-5 align-items-center justify-content-center text-center">
-            <div class="col-4">
-                <img src="../../resources/img/SSMeasurements.jpeg" alt=""
-                    style="width: 80%; border-radius: 10px;">
-                <p class="captions text-center">Sketch book layout and measurements</p>
-            </div>
-            <div class="col-4">
-                <img src="../../resources/img/SSShelfModel.jpeg" alt=""
-                    style="width: 80%;border-radius: 10px;">
-                <p class="captions text-center">SketchUp model of the Shelf</p>
-            </div>
-            <div class="col-4">
-                <img src="../../resources/img/SSSketches.jpeg" alt=""
-                    style="width: 80%;  border-radius: 10px;">
-                <p class="captions text-center">Inital sketch book ideation </p>
+        <div class="container py-5">
+            <div class="row g-4 align-items-stretch">
+      
+                <div class="col-12 col-md-7">
+                    <div id="albumCarousel" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner" id="carouselInner">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#albumCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#albumCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="thumb-strip" id="thumbStrip"></div>
+                </div>
+                <div class="col-12 col-md-5 about-box side-text">
+                    <div class="caption-panel">
+                        <p class="text-uppercase text-muted small mb-1" id="captionEyebrow"></p>
+                        <h3 id="captionTitle" class="fw-bold"></h3>
+                        <p id="captionBody" class="text-secondary"></p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        
+            </div>
+    <script>
+        const photos = [
+          { type: "youtube", src: "https://www.youtube.com/embed/vx70HsGjltk", eyebrow: "", title: "2026 Theory of Ops Video", body: "Video created by Liam Cox and voiced by Ian Mcleod."},
+          { type: "photo", src: "../../resources/img/SunnysideCafeLogo.png", eyebrow: "Graphic Design, Adobe Illustrator", title: "Sunnyside Up Cafe", body: "I created the logo for our ride using Procreate and Adobe Creative Cloud. The inspiration for this design focused mainly on prexisting farm to table restaurants and breakfast cafes." },
+          { type: "photo", src: "../../resources/img/REC2026CircuitPros.jpeg", eyebrow: "Ardiuno, I2C", title: "Work In Progress Circuit", body: "Here is a circuit that I have been working on that was primarily working with just running interrupts with the MCP23008 I/O expander." },
+          { type: "video", src: "../../resources/vid/REC2026ProsVid.mp4", eyebrow: "Prototyping", title: "Ride Prototype", body: "A prototype video of the Sunnyside Scrambler in an protoype state. Testing the fesability of the homemade scissor lift." },
+          { type: "video", src: "../../resources/vid/REC2026PrototypeVid.MP4", eyebrow: "Prototyping", title: "Ride Prototype", body: "Running and testing the motors" }
+        ];
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="../../resources/js/carousel.js"></script>
 </body>
 
 </html>
