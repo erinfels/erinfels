@@ -2,91 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erin Fels Portfolio</title>
-    <link rel="stylesheet" href="https://use.typekit.net/phe6enj.css">
-    <link rel="stylesheet" href="https://use.typekit.net/phe6enj.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="resources/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas Light Tower</title>
+  <link rel="stylesheet" href="https://use.typekit.net/phe6enj.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="resources/css/test.css">
 </head>
 
 <body>
-    <div class="top-section">
-        <img src="resources/img/Rollercoastervector.png" alt="Cart" class="cart">
-        <div class="custom-nav" id="mainNav">
-            <a href="index.html"><img src="resources/img/ErinFelsRC.png" alt="Logo" height="50"></a>
-            <div class="nav-links">
-                <a href="views/projects.html">Projects</a>
-                <a href="#">Contact</a>
-            </div>
+  <div class="wave-track" id="waveTrack">
+    <svg class="wave-svg" viewBox="0 -20 1440 415">
+      <defs>
+        <linearGradient id="titleFill" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1440" y2="0">
+          <stop id="stopBlue" offset="0" stop-color="#3a4458" />
+          <stop id="stopWhite" offset="0" stop-color="#ffffff" />
+        </linearGradient>
+      </defs>
+      <path id="wavePath" d="M-10 300
+          C100 150 225 100 350 100
+          C425 100 550 120 675 300
+          C674 300 800 410 950 400 
+          L1700 400" fill="none" stroke="#3a4458" stroke-width="10" vector-effect="non-scaling-stroke" />
+
+      <text class="curve-title" fill="url(#titleFill)" aria-label="Erin Fels" dy="-20">
+        <textPath href="#wavePath" startOffset="155">Erin Fels</textPath>
+      </text>
+    </svg>
+    <div class="nav-links">
+      <a href="views/projects.html">Projects</a>
+      <a href="#">Contact</a>
+    </div>
+    <img class="cart" src="resources/img/Rollercoastervector.png" alt="" height="50">
+  </div>
+  <div class="bottom-section">
+    <div class="content-section">
+
+      <img src="resources/img/PersonalPicture.JPG" alt="Image" class="side-img"
+        style="width: 30%; height: auto; border-radius: 10px;">
+      <div class="about-box">
+        <div class="side-text" style="color: rgb(58, 68, 88);">
+          <h2>About me:</h2>
+          <h5 style="line-height: 1.6;">Erin Fels is a Junior at the University of Colorado, Boulder. She is studying
+            Creative Technology and Design and Computer Science with a minor in Business. Erin is interested in themed
+            entertainment and immersive technologies. She is also the current Vice-President and past social media chair
+            for CU’s new Themed Park Engineering and Design Club, where she has competed in the Ride Engineering
+            Competition and Toronto Metropolitan Thrill Design Competition Qualifier and a member of CU’s Engineering
+            Honor Society, Tau Beta Pi. Erin works as a CTD Ambassador and Learning Assistant for a physical computing
+            class, Object, for Creative Technology and Design at the Atlas Institute. She spent her past summer as a
+            Design and Programming Intern at Image Engineering working on live special effect shows. Erin is a
+            hardworking and receptive person. Her goals in the future are to work at a themed entertainment company that
+            creates exciting experiences.</h5>
         </div>
+      </div>
     </div>
-    <hr class="nav-line">
-    <div class="name-title">
-        <h1>Erin Fels</h1>
+    <div class="button-row">
+      <a href="https://www.linkedin.com/in/erin-fels/" target="_blank" class="btn btn-primary mt-3"> LinkedIn
+      </a>
+      <a href="resources/img/Erin-Fels-Resume-SD.pdf" target="_blank" download="Erin-Fels-Resume.pdf"
+        class="btn btn-primary mt-3"> Download My Resume
+      </a>
+      <a href="https://github.com/erinfels" target="_blank" class="btn btn-primary mt-3"> GitHub
+      </a>
     </div>
-    <div class="name-title">
-        <h3>Creative Technologist</h3>
-    </div>
-    <div class="name-title" style="padding-bottom: 15px;">
-        <h3>University of Colorado Boulder</h3>
+    <div class="side-text" style="color: rgb(255, 255, 255)">
+      <h2 style="text-indent: 2em;">Recent Projects:</h2>
     </div>
     <div class="bottom-section">
-        <div class="content-section">
-
-            <img src="resources/img/PersonalPicture.JPG" alt="Image" class="side-img"
-                style="width: 30%; height: auto; border-radius: 10px;">
-            <div class="about-box">
-                <div class="side-text" style="color: rgb(58, 68, 88);">
-                    <h2>About me:</h2>
-                    <h5 style="line-height: 1.6;">Erin Fels is a Junior at the University of Colorado, Boulder. She is studying Creative Technology and Design and Computer Science with a minor in Business. Erin is interested in themed entertainment and immersive technologies. She is also the current Vice-President and past social media chair for CU’s new Themed Park Engineering and Design Club, where she has competed in the Ride Engineering Competition and Toronto Metropolitan Thrill Design Competition Qualifier and a member of CU’s Engineering Honor Society, Tau Beta Pi. Erin works as a CTD Ambassador and Learning Assistant for a physical computing class, Object, for Creative Technology and Design at the Atlas Institute. She spent her past summer as a Design and Programming Intern at Image Engineering working on live special effect shows. Erin is a hardworking and receptive person. Her goals in the future are to work at a themed entertainment company that creates exciting experiences.</h5>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-section">
-        <div class="button-row" >
-          <a href="https://www.linkedin.com/in/erin-fels/" target="_blank" class="btn btn-primary mt-3"> LinkedIn
-          </a>
-            <a href="../resources/img/Erin-Fels-Resume-SD.pdf" target="_blank" download="Erin-Fels-Resume.pdf" class="btn btn-primary mt-3"> Download My Resume
-            </a>
-            <a href="https://github.com/erinfels" target="_blank" class="btn btn-primary mt-3"> GitHub
-            </a>
-            </div>
-            <div class="side-text" style="color: rgb(255, 255, 255)">
-                <h2 style="text-indent: 2em;">Recent Projects:</h2>
-              </div>
-              <div class="bottom-section">
-                <div class="grid">
-                    <a href="view/projects/atlslt.html" class="grid-item">
-                        <img src="resources/img/AtlsLTRoofPhoto.jpg" alt="Atlas Institute Light Tower">
-                        <div class="overlay">
-                          <p>Atlas Institute Light Tower</p>
-                        </div>
-                      </a>
-                  <a href="views/projects/REC2026.html" class="grid-item">
-                    <img src="resources/img/REC2206GroupPhoto.jpeg" alt="REC 2026">
-                    <div class="overlay">
-                      <p>REC 2026</p>
-                    </div>
-                  </a>
-                  <a href="views/projects/REC2025.html" class="grid-item">
-                    <img src="resources/img/REC2025.jpeg" alt="REC 2025">
-                    <div class="overlay">
-                      <p>REC 2025</p>
-                    </div>
-                  </a>
-                  <a href="views/projects/GoodsRedes.html" class="grid-item">
-                    <img src="resources/img/GoodreadsRedesign.png" alt="Redesign of Goodreads">
-                    <div class="overlay">
-                      <p>Redesign of Goodreads</p>
-                    </div>
-                  </a>
-             </div>
-             </div>
+      <div class="grid">
+        <a href="view/projects/atlslt.html" class="grid-item">
+          <img src="resources/img/AtlsLTRoofPhoto.jpg" alt="Atlas Institute Light Tower">
+          <div class="overlay">
+            <p>Atlas Institute Light Tower</p>
+          </div>
+        </a>
+        <a href="views/projects/REC2026.html" class="grid-item">
+          <img src="resources/img/REC2206GroupPhoto.jpeg" alt="REC 2026">
+          <div class="overlay">
+            <p>REC 2026</p>
+          </div>
+        </a>
+        <a href="views/projects/REC2025.html" class="grid-item">
+          <img src="resources/img/REC2025.jpeg" alt="REC 2025">
+          <div class="overlay">
+            <p>REC 2025</p>
+          </div>
+        </a>
+        <a href="views/projects/GoodsRedes.html" class="grid-item">
+          <img src="resources/img/GoodreadsRedesign.png" alt="Redesign of Goodreads">
+          <div class="overlay">
+            <p>Redesign of Goodreads</p>
+          </div>
+        </a>
+      </div>
     </div>
-    <script src="resources/js/cart.js"></script>
+  </div>
+  <script src="resources/js/test.js"></script>
 </body>
 
 </html>

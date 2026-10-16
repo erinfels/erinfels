@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Light Tower</title>
+    <link rel="stylesheet" href="https://use.typekit.net/phe6enj.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../resources/css/test.css">
+</head>
+
+<body>
+    <div class="wave-track" id="waveTrack">
+        <svg class="wave-svg" viewBox="0 -70 1440 500">
+            <defs>
+              <linearGradient id="titleFill" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1440" y2="0">
+                <stop id="stopBlue" offset="0" stop-color="#3a4458" />
+                <stop id="stopWhite" offset="0" stop-color="#ffffff" />
+              </linearGradient>
+            </defs>
+        <path id="wavePath"
+              d="M-10 300
+              C100 150 225 100 350 100
+              C425 100 550 120 675 300
+              C675 310 800 410 950 410 
+              L1700 400"
+              fill="none" stroke="#3a4458" stroke-width="15"
+              vector-effect="non-scaling-stroke" />
+
+              <text class="curve-title" fill="url(#titleFill)" aria-label="Erin Fels" dy="-20">
+                <textPath href="#wavePath" startOffset="155">Erin Fels</textPath>
+              </text>
+      </svg>
+      <img class="cart" src="../resources/img/Rollercoastervector.png" alt="" height="50">
+   </div> 
+   <script src="../resources/js/test.js"></script>
+</body>
+
+</html>
