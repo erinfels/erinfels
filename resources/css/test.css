@@ -56,3 +56,19 @@
     transform: none;
     transition: opacity 0.8s ease, transform 0.8s ease;
   }
+  .wave-track .coaster-text {
+    position: absolute;
+    left: 10%;
+    width: 28%;
+    top: 38%;
+    z-index: 2;
+    text-align: center;
+    color: #3a4458;
+    font-family: 'vandertak-capslock', sans-serif;
+  }
+  
+  .wave-track .coaster-text p {
+    margin: 0;
+    font-size: clamp(1rem, 2.2vw, 2rem);
+    line-height: 1.3;
+  }
