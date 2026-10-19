@@ -30,39 +30,69 @@
     </div>
     <div class="bottom-section">
         <div class="content-section">
-            <div class="container py-5">
-                <div class="row g-4 align-items-stretch">
-
-                    <div class="col-12 col-md-7">
-                        <div id="albumCarousel" class="carousel slide" data-bs-ride="false">
-                            <div class="carousel-inner" id="carouselInner">
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#albumCarousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#albumCarousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="thumb-strip" id="thumbStrip"></div>
+            <div class="container my-5">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <img src="../../resources/img/AuroraUserInteraction.png"
+                            alt="Group Photo in front of Light Tower" style="width: 100%; border-radius: 10px;">
                     </div>
-                    <div class="col-12 col-md-5 about-box side-text">
+                    <div class="col-12 col-md-6 about-box side-text">
                         <div class="caption-panel">
-                            <p class="text-uppercase text-muted small mb-1" id="captionEyebrow"></p>
-                            <h3 id="captionTitle" class="fw-bold"></h3>
-                            <p id="captionBody" class="text-secondary"></p>
+                            <h3 class="caption-text fw-bold">Overview:</h3>
+                            <p class="caption-text">Group Project built for How to: Design a Science Museum Exhbit \"
+                                created with 5 other members, Erin Fels, Julia McKeag, Ayesha Rawal, Sylvia Robles, and
+                                Kira Warren. The goal was to develop an interactive exhibit, that could be used by all
+                                ages to help educate about the Aurora Borealis instead of a lack of interaction like
+                                during a lecture or reading.</p>
+                            <p class="caption-text">I was the technology lead where I developed our
+                                primary control systems. I integrated our Aurora A La Carte website with multiple pot
+                                sliders via a Tiny-Core(ESP-based MCU), Wi-Fi, and WebSockets for real-time interaction
+                                with assists from ClaudeAI.
+                                Within my position, I also designed and soldered the circuitry and control system to
+                                create safe and reliable connections. I also developed a printable take-home token for
+                                users by integrating a printing system using Node.js where a physical button triggered
+                                the printer. Finally, we documented the process, code, materials, and “recipe” for
+                                others to repeat and recreate for themselves.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <iframe src="https://atlas-4519.vercel.app/" width="100%" height="500px" style="border:none;">
-            <p>Your browser does not support iframes.</p>
-        </iframe>
+        <div class="container py-5">
+            <div class="row g-4 align-items-stretch ">
+
+                <div class="col-12 col-md-6">
+                    <div id="albumCarousel" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner" id="carouselInner">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#albumCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#albumCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="thumb-strip" id="thumbStrip"></div>
+                </div>
+                <div class="col-12 col-md-6 about-box side-text">
+                    <div class="caption-panel">
+                        <p class="text-uppercase text-muted small mb-1" id="captionEyebrow"></p>
+                        <h3 id="captionTitle" class="fw-bold"></h3>
+                        <p id="captionBody" class="text-secondary"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <iframe src="https://atlas-4519.vercel.app/" width="80%" height="500px" style="border:none;">
+                <p>Your browser does not support iframes.</p>
+            </iframe>
+        </div>
         <blockquote class="instagram-media" data-instgrm-captioned
             data-instgrm-permalink="https://www.instagram.com/reel/DZol3vymFVB/?utm_source=ig_embed&amp;utm_campaign=loading"
             data-instgrm-version="14"
@@ -158,16 +188,20 @@
     </div>
     <script>
         const photos = [
-          { type: "photo", src: "../../resources/img/AuroraUserInteraction.png", eyebrow: "Class Expo Day", title: "About Aurora A La Carte", body: "Group Project built for \"How to: Design a Science Museum Exhbit \" created with 5 other members, Erin Fels, Julia McKeag, Ayesha Rawal, Sylvia Robles, and Kira Warren. The goal was to develop an interactive exhibit, that could be used by all ages to help educate about the Aurora Borealis instead of a lack of interaction like during a lecture or reading. My job was the technology lead where I developed our primary control systems. I integrated our Aurora A La Carte website with multiple pot sliders via a Tiny-Core(ESP-based MCU), Wi-Fi, and WebSockets for real-time interaction. Within my position, I also designed and soldered the circuitry and control system to create safe and reliable connections. I also developed a printable take-home token for users by integrating a printing system using Node.js where a physical button triggered the printer. Finally, we documented the process, code, materials, and “recipe” for others to repeat and recreate for themselves" },
-          { type: "video", src: "../../resources/vid/AuroraInteractionDemo.mp4", eyebrow: "Atlas Expo", title: "User Interaction Demo", body: "User interacting with the physical interface. The exhbibit and website changing in real time based on the slider pot values during the Atlas Expo." },
-          { type: "photo", src: "../../resources/img/AuroraEduSheet.png", eyebrow: "Final Deliverable", title: "User Education Guide", body: "A way to challenge users and facillitate learning about the attributes and effects that cause the Aurora Borealis." },
-          { type: "photo", src: "../../resources/img/AuroraPeppersGhostTopView.png", eyebrow: "Top Projector View", title: "First time turning the projector on", body: "" },
-          { type: "photo", src: "../../resources/img/AuroraPeppersTest.jpg", eyebrow: "Aurora Test", title: "Original Peppers Test", body: "To create the affect that the Aurora was actually happening and not being projected on the screen, we utilized the pepper's ghost trick. Testing took place to find the correct angle of the acrylic and how tall the enclosure needed to be." }
-
+            { type: "video", src: "../../resources/vid/AuroraInteractionDemo.mp4", eyebrow: "User Interaction, Testing, Physical Build", title: "User Interaction Demo", body: "User interacting with the physical interface. The exhbibit and website changing in real time based on the slider pot values during the Atlas Expo." },
+            { type: "video", src: "../../resources/vid/AuroraPrinterTesting.mp4", eyebrow: "Soldering, Physical Computing, ESP, ", title: "Physical Interface Testing", body: "I integrated a physical interface with 5 slider potentiometers with a Tiny-Core(ESP-based MCU). These updated the website created by my group mate: Elizabeth Saunders in real time. Some issues we encountered were bad potentiometers that read bad values so it updated the website incorrectly too. " },
+            { type: "video", src: "../../resources/vid/AuroraPhysInterfaceTest.mp4", eyebrow: "Integration, Physical Computing", title: "Printer Integration Testing", body: "I integrated the physical interface also with a printer. Using Python and Node.js, the script would read the website's current values, then send the values and create a recipe that then would be printed out for the user to take home with their own Aurora Recipe. Worked to write the script and code with ClaudeAI to assist with information I did not know." },
+            { type: "photo", src: "../../resources/img/AuroraEduSheet.png", eyebrow: "Science Education, Experiental Learning", title: "User Activity Guide", body: "A sheet that gave goals to compelete and facillitate learning about the attributes and effects that cause the Aurora Borealis." },
+            { type: "photo", src: "../../resources/img/AuroraPotsandSolder.jpeg", eyebrow: "Fabrication, Soldering, Circuits", title: "Soldering and Circuit Setup", body: "As the technology lead, not only did I lead the physical interface code, but I also soldered and created the physical interface circuitry. I soldered to the potentiometers and used Waygo's and screw terminals to create a clean easily servicable connections." },
+            { type: "photo", src: "../../resources/img/AuroraPeppersTest.jpg", eyebrow: "Aurora Test", title: "Original Peppers Test", body: "To create the affect that the Aurora was actually happening and not being projected on the screen, we utilized the pepper's ghost trick. Testing took place to find the correct angle of the acrylic and how tall the enclosure needed to be." },
+            { type: "photo", src: "../../resources/img/AuroraFrameBuild.jpeg", eyebrow: "Fabrication, Wood Work", title: "Building the Frame", body: "We used 2x2 pieces of wood to build the frame and mdf to create the outside walls. All measurements were based on needs to make the pepper's ghost effect to work." },
+            { type: "video", src: "../../resources/vid/AuroraSelfExpo.mp4", eyebrow: "Showcase, Public Speaking", title: "Day of Expo", body: "On the day of the showcase, I got to speak with many users and understand the good and bad feedback from real time use. In the video you can also see the finished physical interface user's worked with."},
+            { type: "photo", src: "../../resources/img/AuroraSketches.jpg", eyebrow: "Concept Design, Blue Sky", title: "Original Aurora Concept", body: "Our original sketches for the exhibit. Our design stayed pretty similar and stuck to the original concept." },
+            { type: "photo", src: "../../resources/img/AuroraPeppersGhostTopView.png", eyebrow: "Fabrication, Pepper's Ghost", title: "Projector and Enclosure", body: "To achieve the pepper's ghost affect, we had to build an encolsure where the projector could point straight up. This was the first itme we tested the projector." }        
         ];
-      </script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-      <script src="../../resources/js/carousel.js"></script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="../../resources/js/carousel.js"></script>
 </body>
 
 </html>

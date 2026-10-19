@@ -34,9 +34,9 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-6 mb-4 mb-md-0">
                         <img src="../../resources/img/AtlsLTGroupPhoto.JPG" alt="Group Photo in front of Light Tower"
-                            style="width: 80%; height: auto; border-radius: 10px;">
+                            style="height: 50px; border-radius: 10px; ">
                     </div>
-                    <div class="col-12 col-md-5 about-box side-text">
+                    <div class="col-12 col-md-6 about-box side-text">
                         <div class="caption-panel">
                             <h3 class="caption-text fw-bold">Overview:</h3>
                             <p class="caption-text">In the spring of 2026, I joined a class called: ATLAS Light Tower as
@@ -51,7 +51,8 @@
                                 to upgrade the existing space. The team I led contained members with very different
                                 educational backgrounds, from masters to undergrad students that inlcuded aerospace
                                 engineers, computer scientist and creative technologist. I organized and created
-                                documentation, deadlines, and subteams. As a member of the team, I also created my own lighting shows
+                                documentation, deadlines, and subteams. As a member of the team, I also created my own
+                                lighting shows
                                 and helped install new equipment including lights, speakers, a projector and a laser.
 
                             </p>
@@ -62,23 +63,20 @@
         </div>
         <div class="container my-5">
             <div class="row align-items-center justify-content-center">
-                <div class="col-md-6 text-center" >
-                    <iframe src="https://atlastlights.colorado.edu/" width="80%" height="500px" style="border:none;">
-                        <p>Your browser does not support iframes.</p>
-                    </iframe>
+                <div class="col-md-6 text-center">
+                    <img src="../../resources/img/AtlsLTWebsiteView.jpeg" alt="Atlas Light Tower Website"
+                        style="width: 40%; height: auto; border-radius: 10px;">
                 </div>
                 <div class="col-md-6 text-center">
-                    <iframe src="https://sites.google.com/view/atlaslighttower/home" width="80%" height="500px"
-                        style="border:none;">
-                        <p>Your browser does not support iframes.</p>
-                    </iframe>
+                    <img src="../../resources/img/AtlasLTInfoWesbite.png" alt="Atlas Light Tower Website"
+                        style="width: 100%; height: auto; border-radius: 10px;">
                 </div>
             </div>
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-6">
                     <div class="button-row">
                         <a href="" target="_blank" class="btn btn-primary mt-3">
-                            LinkedIn
+                            Light Tower Powers
                         </a>
                     </div>
                 </div>
@@ -91,11 +89,17 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="button-row">
+                    <p style="color: rgb(255, 255, 255);"> *Only can be opened on CU Secure, CU Guest or eduroam wifi.*
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="container py-5">
             <div class="row g-4 align-items-stretch">
 
-                <div class="col-12 col-md-7">
+                <div class="col-12 col-md-6">
                     <div id="albumCarousel" class="carousel slide" data-bs-ride="false">
                         <div class="carousel-inner" id="carouselInner">
                         </div>
@@ -112,7 +116,7 @@
                     </div>
                     <div class="thumb-strip" id="thumbStrip"></div>
                 </div>
-                <div class="col-12 col-md-5 about-box side-text">
+                <div class="col-12 col-md-6 about-box side-text">
                     <div class="caption-panel">
                         <p class="text-uppercase text-muted small mb-1" id="captionEyebrow"></p>
                         <h3 id="captionTitle" class="fw-bold"></h3>
@@ -124,10 +128,14 @@
 
     </div>
     <script>
-        const photos = [            
+        const photos = [
             { type: "youtube", src: "https://drive.google.com/file/d/1q-jAWpbxZPRYaY88_aUgj7RENyCJ1Q9p/preview?usp=sharing", eyebrow: "Lighting Design, Creative Direction", title: "Say Goodbye To Hollywood by Billy Joel", body: "To allow students to play with the light tower, we each programmed our own light show to a song of our choice. This light show was designed in the Xlights software and utilized different fixtures including led bars, Color Kinetics architectual lights and a Chauvet Shocker." },
-            { type: "photo", src: "../../resources/img/AtlasLTDrilling.jpeg", eyebrow: "Fabrication,", title: "Supports", body: "For this project brand new outdoor speakers were installed. The speakers needed supports to be held up safely and properly. I got the chance to drill the appropriate holes necessary for the project and assist in the installation." }, 
-            { type: "photo", src: "../../resources/img/AtlasLTFirstVisit.jpeg", eyebrow: "", title: "First Up Close Look", body: "The sole original ability of the tower was running a show called RGB, which just changed the colors from red to green to blue on 10 second intervals. This was our original first look and chance to go on the roof the first day class." }      
+            { type: "photo", src: "../../resources/img/AtlasLTDrilling.jpeg", eyebrow: "Fabrication,", title: "Supports", body: "For this project brand new outdoor speakers were installed. The speakers needed supports to be held up safely and properly. I got the chance to drill the appropriate holes necessary for the project and assist in the installation." },
+            { type: "photo", src: "../../resources/img/AtlasLTFirstVisit.jpeg", eyebrow: "", title: "First Up Close Look", body: "The sole original ability of the tower was running a show called RGB, which just changed the colors from red to green to blue on 10 second intervals. This was our original first look and chance to go on the roof the first day class." },
+            { type: "photo", src: "../../resources/img/AtlasLTArchitectPages.png", eyebrow: "Documentation", title: "Atlas Institute Building Plans", body: "During the class, we got to explore the original building plans for Atlas. We also spoke to one of the original architects to hear their original ideas for the light tower." },
+            { type: "video", src: "../../resources/vid/AtlasLTSpeakerTesting.mp4", eyebrow: "Installation, Testing", title: "First Speaker Tests", body: "As the project manager, I had proposed a budget and speakers to purchase to the director of the Atlas Institute for the light tower. We recieved the funding and were able to purchase them. This is the first testing of the speakers." },
+            { type: "video", src: "../../resources/vid/AtlasLTLaserTest.mp4", eyebrow: "Laser Design, Testing, Creative Direction", title: "First Laser Tests", body: "The first testing of a laser in the light tower." },
+            { type: "video", src: "../../resources/vid/AtlasLTProjectionTest.mp4", eyebrow: "Projections, Testing", title: "First Projector Testing", body: "Testing the projector for the first time. Looking at the projections to see how well they could be seen from different viewing spots. " }
         ];
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>

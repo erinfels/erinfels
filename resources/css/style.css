@@ -17,7 +17,8 @@ body {
 }
 
 .nav-line {
-  width: 1450px;
+  max-width: 1450px;
+  width: 98%;
   margin: 0 auto;
   border: none;
   border-top: 3px solid rgb(58, 68, 88);
@@ -99,12 +100,9 @@ body {
 }
 
 .content-section {
-  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
-  padding: 50px;
-  padding-left: 100px;
+  padding: 10px;
 }
 
 .top-section {
@@ -214,10 +212,11 @@ body {
   }
 }
 .video-container {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  max-height: 550px;
 }
 .captions{
   width: 60%;
@@ -258,12 +257,15 @@ video {
   height: 40px;
   object-fit: cover;
 }
+
 .carousel-item img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
+  width: auto;
+  max-width: 100%;
+  max-height: 600px;
+  aspect-ratio: auto;
+  display: block;
+  margin: 0 auto;                
   object-fit: contain;
-  border-radius: 0.5rem;
-  background: transparent;
 }
 .caption-panel {
   display: flex;
