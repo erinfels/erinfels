@@ -42,20 +42,7 @@
     font-family: 'vandertak-capslock', sans-serif;
     font-size: 125px;
   }
-
-  .button-row {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease, visibility 0s 0.8s;
-  }
   
-  .button-row.show {
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    transition: opacity 0.8s ease, transform 0.8s ease;
-  }
   .wave-track .coaster-text {
     position: absolute;
     left: 9%;

@@ -4,7 +4,6 @@ const track = document.getElementById('waveTrack');
 const wavePath = document.getElementById('wavePath');
 const stopBlue = document.getElementById('stopBlue');
 const stopWhite = document.getElementById('stopWhite');
-const buttons = document.querySelector('.button-row');
 const navLinks = document.querySelectorAll('.wave-track .nav-links a');
 
 function rideCart(duration) {
@@ -51,8 +50,7 @@ function rideCart(duration) {
             }
         });
     
-        if (!shown && buttons && (here.x >= vb.x + vb.width || t >= 1)) {
-            buttons.classList.add('show');
+        if (!shown && (here.x >= vb.x + vb.width || t >= 1)) {
             shown = true;
         }
     
@@ -77,6 +75,5 @@ if (cart && wavePath) {
 } else {
     console.warn('test.js: cart or wavePath not found');
     if (nav) nav.classList.add('visible');
-    if (buttons) buttons.classList.add('show');
     navLinks.forEach((link) => link.classList.add('show'));
 }

@@ -26,58 +26,89 @@
     <h1>Escape Room Puzzle</h1>
   </div>
   <div class="name-title-project" style="padding-bottom: 15px;">
-    <h3>Tasked to "Solve a Problem" for Final Project. Designed and fabricated a Sunglass Organzier.</h3>
-</div>
+    <h3>Created an Escape Room Puzzle for a physical computing class project to combine physical fabrication and circuit
+      design</h3>
+  </div>
   <div class="bottom-section">
     <div class="content-section">
-      <div class="container py-5">
-          <div class="row g-4 align-items-stretch">
-
-              <div class="col-12 col-md-6">
-                  <div id="albumCarousel" class="carousel slide" data-bs-ride="false">
-                      <div class="carousel-inner" id="carouselInner">
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#albumCarousel"
-                          data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#albumCarousel"
-                          data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                      </button>
-                  </div>
-                  <div class="thumb-strip" id="thumbStrip"></div>
-              </div>
-              <div class="col-12 col-md-6 about-box side-text">
-                  <div class="caption-panel">
-                      <p class="text-uppercase text-muted small mb-1" id="captionEyebrow"></p>
-                      <h3 id="captionTitle" class="fw-bold"></h3>
-                      <p id="captionBody" class="text-secondary"></p>
-                  </div>
-              </div>
+      <div class="container my-5">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="video-container" style="width: 100%; height: auto; border-radius: 10px;">
+              <video controls>
+                <source src="../../resources/vid/EscRmVid.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
+          <div class="col-12 col-md-6 about-box side-text">
+            <div class="caption-panel">
+              <h3 class="caption-text fw-bold">Overview:</h3>
+              <p class="caption-text"> We were able to choose to do a project that combined electrical components and
+                enclosure design. I chose to doan escape room puzzle. This puzzle used 3 RFID tag readers and included
+                code that made sure that the correct tag was placed. It linked to a boolean statement that triggered a
+                servo to the move to the open position. If not, it would move back to zero or stay at the zero position.
+                I used a hinge and prints from Printables (all linked below).
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
+    <hr class="seperation-line">
+    <div class="content-section">
+      <div class="container py-5">
+        <div class="row g-4 align-items-stretch">
+
+          <div class="col-12 col-md-6">
+            <div id="albumCarousel" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-inner" id="carouselInner">
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#albumCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#albumCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="thumb-strip" id="thumbStrip"></div>
+          </div>
+          <div class="col-12 col-md-6 about-box side-text">
+            <div class="caption-panel">
+              <p class="text-uppercase text-muted small mb-1" id="captionEyebrow"></p>
+              <h3 id="captionTitle" class="fw-bold"></h3>
+              <p id="captionBody" class="text-secondary"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="seperation-line">
     <div class="container my-5">
       <div class="side-text" style="font-size: 18px;">
-      <p>Printables Credits:</p>
-      <p style="margin: 0 0 4px 0;"><a href="https://www.printables.com/model/1248021-easy-to-print-skull-scalable">Skull</a></p>
-      <p style="margin: 0 0 4px 0;"><a href="https://www.printables.com/model/1088117-door-hinge-collection-4-variations-parametric">Door Hinge</a></p>
-      <p style="margin: 0 0 4px 0;"><a href="https://www.printables.com/model/537722-hexagonal-helix-sculpture-prints-supportless">Hexagonal Helix Sculpture</a></p>
+        <p>Printables Credits:</p>
+        <p style="margin: 0 0 4px 0;"><a
+            href="https://www.printables.com/model/1248021-easy-to-print-skull-scalable">Skull</a></p>
+        <p style="margin: 0 0 4px 0;"><a
+            href="https://www.printables.com/model/1088117-door-hinge-collection-4-variations-parametric">Door Hinge</a>
+        </p>
+        <p style="margin: 0 0 4px 0;"><a
+            href="https://www.printables.com/model/537722-hexagonal-helix-sculpture-prints-supportless">Hexagonal Helix
+            Sculpture</a></p>
+      </div>
     </div>
-  </div>  
-</div>
-<script>
-  const photos = [
-    { type: "video", src: "../../resources/vid/EscRmVid.mp4", eyebrow: "Physical Computing, Arduino, Circuitry", title: "RFID Tag Escape Room Puzzle", body: "We were able to choose to do a project that combined electrical components and enclosure design. I chose to doan escape room puzzle. This puzzle used 3 RFID tag readers and included code that made sure that the correct tag was placed. It linked to a boolean statement that triggered a servo to the move to the open position. If not, it would move back to zero or stay at the zero position. I used a hinge and prints from Printables (all linked below)." },
-    { type: "photo", src: "../../resources/img/EscRmRFIDPieces.png", eyebrow: "Physical Computing, Arduino, Circuitry", title: "About Aurora A La Carte", body: "" },
-    { type: "photo", src: "../../resources/img/EscRmProto.jpeg", eyebrow: "Physical Computing, Arduino, Circuitry", title: "User Interaction Demo", body: "User interacting with the physical interface. The exhbibit and website changing in real time based on the slider pot values during the Atlas Expo." }
-  ];
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-<script src="../../resources/js/carousel.js"></script>
+  </div>
+  <script>
+    const photos = [
+      { type: "video", src: "../../resources/vid/EscRmTesting.mp4", eyebrow: "Physical Computing, Arduino, Circuitry, Testing", title: "User Interaction Demo", body: "User interacting with the physical interface. The exhbibit and website changing in real time based on the slider pot values during the Atlas Expo." },
+      { type: "photo", src: "../../resources/img/EscRmRFIDPieces.png", eyebrow: "Fabrication, RFID Tag", title: "RFID Tags", body: "3D printed enclosures for the RFID tags to help create a more immersive design than blue tags." },
+      { type: "video", src: "../../resources/vid/EscRmCircuitTest.mp4", eyebrow: "Prototyping, Circuitry Design, Component Integration", title: "Basic Circuit Testing", body: "Testing the circuit before enclosure creation. Coding the interaction and integration multiple RFID tags together with the servo motor and an LED" },
+      { type: "photo", src: "../../resources/img/EscRmProto.jpeg", eyebrow: "Integration, TEsting", title: "Testing Integration", body: "Testing code and integration of just two RFID tags and when the correct tags are placed an LED turns on." }
+    ];
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="../../resources/js/carousel.js"></script>
 </body>
 
 </html>
