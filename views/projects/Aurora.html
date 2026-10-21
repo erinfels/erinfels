@@ -26,7 +26,7 @@
         <h1>Aurora A La Carte</h1>
     </div>
     <div class="name-title-project" style="padding-bottom: 15px;">
-        <h3>Created a science museum exhibit for choice topic to assist with learning in a more experiental way</h3>
+        <h3>Created a science museum exhibit for choice topic to assist with learning in a more experiential way</h3>
     </div>
     <div class="bottom-section">
         <div class="content-section">
@@ -39,7 +39,7 @@
                     <div class="col-12 col-md-6 about-box side-text">
                         <div class="caption-panel">
                             <h3 class="caption-text fw-bold">Overview:</h3>
-                            <p class="caption-text">Group Project built for How to: Design a Science Museum Exhbit
+                            <p class="caption-text">Group Project built for How to: Design a Science Museum Exhibit
                                 created with 5 other members, Erin Fels, Julia McKeag, Ayesha Rawal, Sylvia Robles, and
                                 Kira Warren. The goal was to develop an interactive exhibit, that could be used by all
                                 ages to help educate about the Aurora Borealis instead of a lack of interaction like
@@ -47,7 +47,7 @@
                             <p class="caption-text">I was the technology lead where I developed our
                                 primary control systems. I integrated our Aurora A La Carte website with multiple pot
                                 sliders via a Tiny-Core(ESP-based MCU), Wi-Fi, and WebSockets for real-time interaction
-                                with assists from ClaudeAI.
+                                with assistance from ClaudeAI.
                                 Within my position, I also designed and soldered the circuitry and control system to
                                 create safe and reliable connections. I also developed a printable take-home token for
                                 users by integrating a printing system using Node.js where a physical button triggered
@@ -193,9 +193,28 @@
             <script async src="//www.instagram.com/embed.js"></script>
         </div>
     </div>
+    <footer class="custom-footer d-flex flex-wrap justify-content-between align-items-center py-3 px-4 m-0">
+        <div class="d-flex align-items-center"> 
+          <a href="index.html">
+            <img src="../../resources/img/ErinFelsRC.png" alt="Logo" style="height: 32px; width: auto;">
+          </a>
+        </div>
+        <ul class="nav justify-content-end list-unstyled d-flex align-items-center mb-0">
+          <li class="ms-3">
+            <a href="https://github.com/erinfels" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <img src="../../resources/img/GitHub_Invertocat_Black_Clearspace.svg" alt="GitHub" style="width: 28px; height: 28px;">
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <img src="../../resources/img/InBug-Black.png" alt="LinkedIn" style="width: 28px; height: 28px;">
+            </a>
+          </li>
+        </ul>
+      </footer>
     <script>
         const photos = [
-            { type: "video", src: "../../resources/vid/AuroraInteractionDemo.mp4", eyebrow: "User Interaction, Testing, Physical Build", title: "User Interaction Demo", body: "User interacting with the physical interface. The exhbibit and website changing in real time based on the slider pot values during the Atlas Expo." },
+            { type: "video", src: "../../resources/vid/AuroraInteractionDemo.mp4", eyebrow: "User Interaction, Testing, Physical Build", title: "User Interaction Demo", body: "User interacting with the physical interface. The exhibit and website changing in real time based on the slider pot values during the Atlas Expo." },
             { type: "video", src: "../../resources/vid/AuroraPrinterTesting.mp4", eyebrow: "Soldering, Physical Computing, ESP, ", title: "Physical Interface Testing", body: "I integrated a physical interface with 5 slider potentiometers with a Tiny-Core(ESP-based MCU). These updated the website created by my group mate: Elizabeth Saunders in real time. Some issues we encountered were bad potentiometers that read bad values so it updated the website incorrectly too. " },
             { type: "video", src: "../../resources/vid/AuroraPhysInterfaceTest.mp4", eyebrow: "Integration, Physical Computing", title: "Printer Integration Testing", body: "I integrated the physical interface also with a printer. Using Python and Node.js, the script would read the website's current values, then send the values and create a recipe that then would be printed out for the user to take home with their own Aurora Recipe. Worked to write the script and code with ClaudeAI to assist with information I did not know." },
             { type: "photo", src: "../../resources/img/AuroraEduSheet.png", eyebrow: "Science Education, Experiental Learning", title: "User Activity Guide", body: "A sheet that gave goals to compelete and facillitate learning about the attributes and effects that cause the Aurora Borealis." },
