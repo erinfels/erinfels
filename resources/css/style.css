@@ -442,7 +442,7 @@ video {
   border-radius: 10px;
 }
 .section-heading {
-  color: #ffffff;
+  color: #ffffff !important;
   padding-left: 5%;
   margin-bottom: 1.5rem;
 }
