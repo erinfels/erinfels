@@ -59,3 +59,34 @@
     font-size: clamp(1rem, 2.2vw, 2rem);
     line-height: 1.3;
   }
+@media (max-width: 768px) {
+  .wave-track .coaster-text {
+    left: 24%;
+    transform: translateX(-50%);
+    width: 38%;
+    top: 50%;
+  }
+
+  .wave-track .coaster-text p {
+    font-size: clamp(0.5rem, 2.5vw, 0.95rem);
+    line-height: 1.15;
+    white-space: nowrap;
+  }
+
+  .wave-track .nav-links a {
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .wave-track .coaster-text {
+    left: 21%;
+    transform: translateX(-50%);
+    width: 40%;
+    top: 46%;
+  }
+
+  .wave-track .coaster-text p {
+    font-size: clamp(0.42rem, 2.8vw, 0.75rem);
+  }
+}
