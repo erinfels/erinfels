@@ -410,6 +410,13 @@ video {
   --bs-btn-active-bg: rgb(58, 68, 88);
   --bs-btn-active-border-color: #fff;
 }
+.carousel-control-prev,
+.carousel-control-next {
+  height: 200px;                 
+  top: 50%;                     
+  transform: translateY(-50%); 
+  bottom: auto; 
+}
 
 .button-row {
   display: flex;
